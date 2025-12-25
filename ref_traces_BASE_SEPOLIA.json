@@ -2,7 +2,7 @@
   "runId": "ref-1766634226398",
   "client": {
     "name": "ref",
-    "rpcUrl": "https://eth-sepolia.g.alchemy.com/v2/wTYnccIW9DN1QL1j8xGpP"
+    "rpcUrl": "https://eth-sepolia.g.alchemy.com/v2/"
   },
   "startedAt": "2025-12-25T03:43:46.398Z",
   "availability": "AVAILABLE",

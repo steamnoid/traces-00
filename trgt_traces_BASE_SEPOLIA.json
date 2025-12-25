@@ -2,7 +2,7 @@
   "runId": "trgt-1766634449920",
   "client": {
     "name": "trgt",
-    "rpcUrl": "https://base-sepolia.g.alchemy.com/v2/wTYnccIW9DN1QL1j8xGpP"
+    "rpcUrl": "https://base-sepolia.g.alchemy.com/v2/"
   },
   "startedAt": "2025-12-25T03:47:29.921Z",
   "availability": "AVAILABLE",
