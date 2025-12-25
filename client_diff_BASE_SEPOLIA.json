@@ -1,0 +1,317 @@
+{
+  "diffResult": {
+    "findings": [
+      {
+        "type": "storage_diff_mismatch",
+        "detail": "Prestate diff differs (16 diffs)",
+        "caseId": "deploy_receiver",
+        "refTxHash": "0x750f496280d2f4e34f9b39a2ea4bd75df145d462b0c8948458d0a740f1d8f76e",
+        "trgtTxHash": "0xa32c3d3f81c602c86fdeae7760aabc2bee0fd219518a0affd89ddfa4b35a9157"
+      },
+      {
+        "type": "log_mismatch",
+        "detail": "Log[0] address differs only (EXPECTED)\nRAW REF: {\"address\":\"0x7eBC29857b124c740D1E762DaF5aBd05095c5216\",\"topics\":[\"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef\",\"0x0000000000000000000000000000000000000000000000000000000000000000\",\"0x000000000000000000000000732c2681de181f01d99177a6db2a59758e4f74a2\"],\"data\":\"0x00000000000000000000000000000000000000000000003635c9adc5dea00000\"}\nRAW TRGT: {\"address\":\"0x49304599eBBfA3e80CBb7626947C046Cf6A00B8F\",\"topics\":[\"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef\",\"0x0000000000000000000000000000000000000000000000000000000000000000\",\"0x000000000000000000000000732c2681de181f01d99177a6db2a59758e4f74a2\"],\"data\":\"0x00000000000000000000000000000000000000000000003635c9adc5dea00000\"}\nDECODED REF: Transfer(0=0x0000000000000000000000000000000000000000, 1=0x732C2681De181f01d99177A6db2a59758E4f74A2, 2=1000000000000000000000)\nDECODED TRGT: Transfer(0=0x0000000000000000000000000000000000000000, 1=0x732C2681De181f01d99177A6db2a59758E4f74A2, 2=1000000000000000000000)",
+        "expected": true,
+        "caseId": "deploy_token",
+        "refTxHash": "0x06bfd635da18f32f8990451a822eaa16be48dd22fb1df1b9445fe3e1199d96bc",
+        "trgtTxHash": "0x18d0962a0799c0f89d36222427b7b7c6acbc239eb01eb41734418b8c3ad7bdec"
+      },
+      {
+        "type": "storage_diff_mismatch",
+        "detail": "Prestate diff differs (16 diffs)",
+        "caseId": "deploy_token",
+        "refTxHash": "0x06bfd635da18f32f8990451a822eaa16be48dd22fb1df1b9445fe3e1199d96bc",
+        "trgtTxHash": "0x18d0962a0799c0f89d36222427b7b7c6acbc239eb01eb41734418b8c3ad7bdec"
+      },
+      {
+        "type": "log_mismatch",
+        "detail": "Log[0] address differs only (EXPECTED)\nRAW REF: {\"address\":\"0x7eBC29857b124c740D1E762DaF5aBd05095c5216\",\"topics\":[\"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef\",\"0x0000000000000000000000000000000000000000000000000000000000000000\",\"0x000000000000000000000000732c2681de181f01d99177a6db2a59758e4f74a2\"],\"data\":\"0x0000000000000000000000000000000000000000000000000000000000002710\"}\nRAW TRGT: {\"address\":\"0x49304599eBBfA3e80CBb7626947C046Cf6A00B8F\",\"topics\":[\"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef\",\"0x0000000000000000000000000000000000000000000000000000000000000000\",\"0x000000000000000000000000732c2681de181f01d99177a6db2a59758e4f74a2\"],\"data\":\"0x0000000000000000000000000000000000000000000000000000000000002710\"}\nDECODED REF: Transfer(0=0x0000000000000000000000000000000000000000, 1=0x732C2681De181f01d99177A6db2a59758E4f74A2, 2=10000)\nDECODED TRGT: Transfer(0=0x0000000000000000000000000000000000000000, 1=0x732C2681De181f01d99177A6db2a59758E4f74A2, 2=10000)",
+        "expected": true,
+        "caseId": "setup_mint_more",
+        "refTxHash": "0x5ec4e7fabc013123b263832ae04d47dbd692472c56f7be6d5bd36fc3acd892fe",
+        "trgtTxHash": "0x9cc50772a1a2e9b8997aa9bd132e198a700076d960d21b1a83ca522bf4ef0a99"
+      },
+      {
+        "type": "storage_diff_mismatch",
+        "detail": "Prestate diff differs (18 diffs)",
+        "caseId": "setup_mint_more",
+        "refTxHash": "0x5ec4e7fabc013123b263832ae04d47dbd692472c56f7be6d5bd36fc3acd892fe",
+        "trgtTxHash": "0x9cc50772a1a2e9b8997aa9bd132e198a700076d960d21b1a83ca522bf4ef0a99"
+      },
+      {
+        "type": "success_mismatch",
+        "detail": "Success mismatch: ref=SUCCESS trgt=REVERT",
+        "caseId": "erc20_approve_transferFrom_deterministic",
+        "refTxHash": "0x774dc0a400616fd9955855e5b0fef44e259235f5cf961769ab47ca4536ee37b1",
+        "trgtTxHash": null
+      },
+      {
+        "type": "log_mismatch",
+        "detail": "Log count differs: ref=2 trgt=0\nRAW REF: {\"address\":\"0x7eBC29857b124c740D1E762DaF5aBd05095c5216\",\"topics\":[\"0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925\",\"0x000000000000000000000000732c2681de181f01d99177a6db2a59758e4f74a2\",\"0x000000000000000000000000a15e540fd01a3d1d5f8c74e9627c2b3a789d21bd\"],\"data\":\"0x0000000000000000000000000000000000000000000000000000000000000000\"}\n{\"address\":\"0x7eBC29857b124c740D1E762DaF5aBd05095c5216\",\"topics\":[\"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef\",\"0x000000000000000000000000732c2681de181f01d99177a6db2a59758e4f74a2\",\"0x000000000000000000000000a15e540fd01a3d1d5f8c74e9627c2b3a789d21bd\"],\"data\":\"0x00000000000000000000000000000000000000000000001b1ae4d6e2ef500000\"}\nRAW TRGT: \nDECODED REF: Approval(0=0x732C2681De181f01d99177A6db2a59758E4f74A2, 1=0xA15e540fd01a3d1D5F8c74e9627c2b3a789d21bD, 2=0)\nTransfer(0=0x732C2681De181f01d99177A6db2a59758E4f74A2, 1=0xA15e540fd01a3d1D5F8c74e9627c2b3a789d21bD, 2=500000000000000000000)\nDECODED TRGT: ",
+        "caseId": "erc20_approve_transferFrom_deterministic",
+        "refTxHash": "0x774dc0a400616fd9955855e5b0fef44e259235f5cf961769ab47ca4536ee37b1",
+        "trgtTxHash": null
+      },
+      {
+        "type": "state_mismatch",
+        "detail": "Post-state differs (2 diffs)",
+        "diff": [
+          {
+            "kind": "E",
+            "path": [
+              "balances",
+              "alice"
+            ],
+            "lhs": "1500000000000000010000",
+            "rhs": "2000000000000000010000"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "balances",
+              "bob"
+            ],
+            "lhs": "500000000000000000000",
+            "rhs": "0"
+          }
+        ],
+        "caseId": "erc20_approve_transferFrom_deterministic",
+        "refTxHash": "0x774dc0a400616fd9955855e5b0fef44e259235f5cf961769ab47ca4536ee37b1",
+        "trgtTxHash": null
+      },
+      {
+        "type": "storage_diff_mismatch",
+        "detail": "Prestate diff differs (1 diffs)",
+        "caseId": "erc20_approve_transferFrom_deterministic",
+        "refTxHash": "0x774dc0a400616fd9955855e5b0fef44e259235f5cf961769ab47ca4536ee37b1",
+        "trgtTxHash": null
+      }
+    ],
+    "aligned": [
+      {
+        "caseId": "deploy_receiver",
+        "refTxHash": "0x750f496280d2f4e34f9b39a2ea4bd75df145d462b0c8948458d0a740f1d8f76e",
+        "trgtTxHash": "0xa32c3d3f81c602c86fdeae7760aabc2bee0fd219518a0affd89ddfa4b35a9157"
+      },
+      {
+        "caseId": "deploy_token",
+        "refTxHash": "0x06bfd635da18f32f8990451a822eaa16be48dd22fb1df1b9445fe3e1199d96bc",
+        "trgtTxHash": "0x18d0962a0799c0f89d36222427b7b7c6acbc239eb01eb41734418b8c3ad7bdec"
+      },
+      {
+        "caseId": "setup_mint_more",
+        "refTxHash": "0x5ec4e7fabc013123b263832ae04d47dbd692472c56f7be6d5bd36fc3acd892fe",
+        "trgtTxHash": "0x9cc50772a1a2e9b8997aa9bd132e198a700076d960d21b1a83ca522bf4ef0a99"
+      },
+      {
+        "caseId": "erc20_approve_transferFrom_deterministic",
+        "refTxHash": "0x774dc0a400616fd9955855e5b0fef44e259235f5cf961769ab47ca4536ee37b1",
+        "trgtTxHash": null
+      }
+    ]
+  },
+  "clusters": [
+    {
+      "bugId": "BUG-001",
+      "severity": "CRITICAL",
+      "type": "REVERT-DESYNC",
+      "signature": {
+        "findingType": "success_mismatch",
+        "divergenceSig": null
+      },
+      "instances": [
+        {
+          "type": "success_mismatch",
+          "caseId": "erc20_approve_transferFrom_deterministic",
+          "detail": "Success mismatch: ref=SUCCESS trgt=REVERT",
+          "refTxHash": "0x774dc0a400616fd9955855e5b0fef44e259235f5cf961769ab47ca4536ee37b1",
+          "trgtTxHash": null,
+          "divergence": null
+        }
+      ],
+      "scoring": {
+        "impact": 5,
+        "exploitability": 4,
+        "detectability": 2,
+        "finalSeverity": 40
+      },
+      "relevance": {
+        "affectedScope": [
+          "EVM execution",
+          "ERC20"
+        ],
+        "potentialImpact": [
+          "stuck funds"
+        ]
+      }
+    },
+    {
+      "bugId": "BUG-002",
+      "severity": "HIGH",
+      "type": "STORAGE-CORRUPTION",
+      "signature": {
+        "findingType": "state_mismatch",
+        "divergenceSig": null
+      },
+      "instances": [
+        {
+          "type": "state_mismatch",
+          "caseId": "erc20_approve_transferFrom_deterministic",
+          "detail": "Post-state differs (2 diffs)",
+          "refTxHash": "0x774dc0a400616fd9955855e5b0fef44e259235f5cf961769ab47ca4536ee37b1",
+          "trgtTxHash": null,
+          "divergence": null
+        }
+      ],
+      "scoring": {
+        "impact": 4,
+        "exploitability": 2,
+        "detectability": 3,
+        "finalSeverity": 24
+      },
+      "relevance": {
+        "affectedScope": [
+          "EVM execution",
+          "ERC20"
+        ],
+        "potentialImpact": [
+          "fund loss"
+        ]
+      }
+    },
+    {
+      "bugId": "BUG-003",
+      "severity": "HIGH",
+      "type": "STORAGE-CORRUPTION",
+      "signature": {
+        "findingType": "storage_diff_mismatch",
+        "divergenceSig": null
+      },
+      "instances": [
+        {
+          "type": "storage_diff_mismatch",
+          "caseId": "deploy_receiver",
+          "detail": "Prestate diff differs (16 diffs)",
+          "refTxHash": "0x750f496280d2f4e34f9b39a2ea4bd75df145d462b0c8948458d0a740f1d8f76e",
+          "trgtTxHash": "0xa32c3d3f81c602c86fdeae7760aabc2bee0fd219518a0affd89ddfa4b35a9157",
+          "divergence": null
+        },
+        {
+          "type": "storage_diff_mismatch",
+          "caseId": "deploy_token",
+          "detail": "Prestate diff differs (16 diffs)",
+          "refTxHash": "0x06bfd635da18f32f8990451a822eaa16be48dd22fb1df1b9445fe3e1199d96bc",
+          "trgtTxHash": "0x18d0962a0799c0f89d36222427b7b7c6acbc239eb01eb41734418b8c3ad7bdec",
+          "divergence": null
+        },
+        {
+          "type": "storage_diff_mismatch",
+          "caseId": "setup_mint_more",
+          "detail": "Prestate diff differs (18 diffs)",
+          "refTxHash": "0x5ec4e7fabc013123b263832ae04d47dbd692472c56f7be6d5bd36fc3acd892fe",
+          "trgtTxHash": "0x9cc50772a1a2e9b8997aa9bd132e198a700076d960d21b1a83ca522bf4ef0a99",
+          "divergence": null
+        },
+        {
+          "type": "storage_diff_mismatch",
+          "caseId": "erc20_approve_transferFrom_deterministic",
+          "detail": "Prestate diff differs (1 diffs)",
+          "refTxHash": "0x774dc0a400616fd9955855e5b0fef44e259235f5cf961769ab47ca4536ee37b1",
+          "trgtTxHash": null,
+          "divergence": null
+        }
+      ],
+      "scoring": {
+        "impact": 4,
+        "exploitability": 2,
+        "detectability": 5,
+        "finalSeverity": 40
+      },
+      "relevance": {
+        "affectedScope": [
+          "EVM execution",
+          "ERC20"
+        ],
+        "potentialImpact": [
+          "fund loss"
+        ]
+      }
+    },
+    {
+      "bugId": "BUG-004",
+      "severity": "MEDIUM",
+      "type": "EXECUTION-MISMATCH",
+      "signature": {
+        "findingType": "log_mismatch",
+        "divergenceSig": null
+      },
+      "instances": [
+        {
+          "type": "log_mismatch",
+          "caseId": "erc20_approve_transferFrom_deterministic",
+          "detail": "Log count differs: ref=2 trgt=0\nRAW REF: {\"address\":\"0x7eBC29857b124c740D1E762DaF5aBd05095c5216\",\"topics\":[\"0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925\",\"0x000000000000000000000000732c2681de181f01d99177a6db2a59758e4f74a2\",\"0x000000000000000000000000a15e540fd01a3d1d5f8c74e9627c2b3a789d21bd\"],\"data\":\"0x0000000000000000000000000000000000000000000000000000000000000000\"}\n{\"address\":\"0x7eBC29857b124c740D1E762DaF5aBd05095c5216\",\"topics\":[\"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef\",\"0x000000000000000000000000732c2681de181f01d99177a6db2a59758e4f74a2\",\"0x000000000000000000000000a15e540fd01a3d1d5f8c74e9627c2b3a789d21bd\"],\"data\":\"0x00000000000000000000000000000000000000000000001b1ae4d6e2ef500000\"}\nRAW TRGT: \nDECODED REF: Approval(0=0x732C2681De181f01d99177A6db2a59758E4f74A2, 1=0xA15e540fd01a3d1D5F8c74e9627c2b3a789d21bD, 2=0)\nTransfer(0=0x732C2681De181f01d99177A6db2a59758E4f74A2, 1=0xA15e540fd01a3d1D5F8c74e9627c2b3a789d21bD, 2=500000000000000000000)\nDECODED TRGT: ",
+          "refTxHash": "0x774dc0a400616fd9955855e5b0fef44e259235f5cf961769ab47ca4536ee37b1",
+          "trgtTxHash": null,
+          "divergence": null
+        }
+      ],
+      "scoring": {
+        "impact": 2,
+        "exploitability": 2,
+        "detectability": 2,
+        "finalSeverity": 8
+      },
+      "relevance": {
+        "affectedScope": [
+          "EVM execution",
+          "ERC20"
+        ],
+        "potentialImpact": [
+          "unknown"
+        ]
+      }
+    },
+    {
+      "bugId": "BUG-005",
+      "severity": "EXPECTED",
+      "type": "EXECUTION-MISMATCH",
+      "signature": {
+        "findingType": "log_mismatch",
+        "divergenceSig": null
+      },
+      "instances": [
+        {
+          "type": "log_mismatch",
+          "caseId": "deploy_token",
+          "detail": "Log[0] address differs only (EXPECTED)\nRAW REF: {\"address\":\"0x7eBC29857b124c740D1E762DaF5aBd05095c5216\",\"topics\":[\"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef\",\"0x0000000000000000000000000000000000000000000000000000000000000000\",\"0x000000000000000000000000732c2681de181f01d99177a6db2a59758e4f74a2\"],\"data\":\"0x00000000000000000000000000000000000000000000003635c9adc5dea00000\"}\nRAW TRGT: {\"address\":\"0x49304599eBBfA3e80CBb7626947C046Cf6A00B8F\",\"topics\":[\"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef\",\"0x0000000000000000000000000000000000000000000000000000000000000000\",\"0x000000000000000000000000732c2681de181f01d99177a6db2a59758e4f74a2\"],\"data\":\"0x00000000000000000000000000000000000000000000003635c9adc5dea00000\"}\nDECODED REF: Transfer(0=0x0000000000000000000000000000000000000000, 1=0x732C2681De181f01d99177A6db2a59758E4f74A2, 2=1000000000000000000000)\nDECODED TRGT: Transfer(0=0x0000000000000000000000000000000000000000, 1=0x732C2681De181f01d99177A6db2a59758E4f74A2, 2=1000000000000000000000)",
+          "refTxHash": "0x06bfd635da18f32f8990451a822eaa16be48dd22fb1df1b9445fe3e1199d96bc",
+          "trgtTxHash": "0x18d0962a0799c0f89d36222427b7b7c6acbc239eb01eb41734418b8c3ad7bdec",
+          "divergence": null
+        },
+        {
+          "type": "log_mismatch",
+          "caseId": "setup_mint_more",
+          "detail": "Log[0] address differs only (EXPECTED)\nRAW REF: {\"address\":\"0x7eBC29857b124c740D1E762DaF5aBd05095c5216\",\"topics\":[\"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef\",\"0x0000000000000000000000000000000000000000000000000000000000000000\",\"0x000000000000000000000000732c2681de181f01d99177a6db2a59758e4f74a2\"],\"data\":\"0x0000000000000000000000000000000000000000000000000000000000002710\"}\nRAW TRGT: {\"address\":\"0x49304599eBBfA3e80CBb7626947C046Cf6A00B8F\",\"topics\":[\"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef\",\"0x0000000000000000000000000000000000000000000000000000000000000000\",\"0x000000000000000000000000732c2681de181f01d99177a6db2a59758e4f74a2\"],\"data\":\"0x0000000000000000000000000000000000000000000000000000000000002710\"}\nDECODED REF: Transfer(0=0x0000000000000000000000000000000000000000, 1=0x732C2681De181f01d99177A6db2a59758E4f74A2, 2=10000)\nDECODED TRGT: Transfer(0=0x0000000000000000000000000000000000000000, 1=0x732C2681De181f01d99177A6db2a59758E4f74A2, 2=10000)",
+          "refTxHash": "0x5ec4e7fabc013123b263832ae04d47dbd692472c56f7be6d5bd36fc3acd892fe",
+          "trgtTxHash": "0x9cc50772a1a2e9b8997aa9bd132e198a700076d960d21b1a83ca522bf4ef0a99",
+          "divergence": null
+        }
+      ],
+      "scoring": {
+        "impact": 1,
+        "exploitability": 2,
+        "detectability": 2,
+        "finalSeverity": 4
+      },
+      "relevance": {
+        "affectedScope": [
+          "EVM execution",
+          "ERC20"
+        ],
+        "potentialImpact": [
+          "unknown"
+        ]
+      }
+    }
+  ]
+}
